@@ -23,7 +23,7 @@ def equals():
         equation_label.set("syntax error")
         equation_text = ""
 
-def bs():
+def backSpace():
     global equation_text
 
     if equation_text == "0":
@@ -135,8 +135,8 @@ clear = Button(frame2, text="Clear", height=4, width=39//2, font=35,
                command=clear)
 clear.grid(row=0,column=0)
 
-bs = Button(frame2, text="<-",height=4, width=39//2, font=35,
-            command=bs)
-bs.grid(row=0,column=1)
+backSpace = Button(frame2, text="<-",height=4, width=39//2, font=35,
+            command=backSpace)
+backSpace.grid(row=0,column=1)
 
 window.mainloop()
